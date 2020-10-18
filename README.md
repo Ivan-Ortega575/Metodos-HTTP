@@ -9,6 +9,14 @@ GET php.net/docs HTTP/1.1
 <h3>En este caso devolverá HTML. Y después los demás resources como CSS, JS, o imágenes:</h3>
 GET php.net/images/logo.png HTTP/1.1
 
+<h2>Ejemplo</h2>
+<form action="formget.php" method="get">
+        Nombre: <input type="text" name="nombre"><br>
+        Email: <input type="text" name="email"><br>
+        <input type="submit" value="Enviar">
+    </form>
+    
+
 <h2>2.-HEAD</h2>
 <h3>El método HEAD pide una respuesta idéntica a la de una petición GET, pero sin el cuerpo de la respuesta.</h3>
 
