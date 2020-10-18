@@ -37,18 +37,29 @@ PUT. Utilizado normalmente para actualizar contenidos, pero también pueden crea
 
 PUT ejemplo.com/usuario/peter HTTP/1.1
 
+![PUT](https://user-images.githubusercontent.com/72004435/96374146-8f004d80-1136-11eb-918e-5eb801187c24.PNG)
+
+
 <h2>6.-DELETE</h2>
 <h3>El método DELETE borra un recurso en específico.
 DELETE. Simplemente elimina un resource identificado en la URI. Si se elimina correctamente devuelve 200 junto con un body response, o 204 sin body. DELETE, al igual que PUT y GET, también es idempotente.</H3>
     
 DELETE ejemplo.com/usuario/peter HTTP/1.1
 
+![DELATE](https://user-images.githubusercontent.com/72004435/96374198-cff86200-1136-11eb-94c1-ad2f875e7a8f.PNG)
+
+
 <h2>7.-OPTIONS</h2>
 <h3>El método OPTIONS es utilizado para describir las opciones de comunicación para el recurso de destino.</h3>
+
+
 
 <h2>8.-TRACE</h2>
 <h3>El método TRACE  realiza una prueba de bucle de retorno de mensaje a lo largo de la ruta al recurso de destino.
 </h3>
 <h2>9.-CONNECT</h2>
 <h3>El método CONNECT establece un túnel hacia el servidor identificado por el recurso.</h3>
+
+![CONNECT](https://user-images.githubusercontent.com/72004435/96374238-1221a380-1137-11eb-8b01-169d799e1aa7.PNG)
+
 
