@@ -1,7 +1,7 @@
 <h1>Metodos-HTTP</h1>
 
 
-<h2>1.-GET</h2>
+<center><h2>1.-GET</h2></center>
 <h3>El método GET  solicita una representación de un recurso específico. Las peticiones que usan el método GET sólo deben recuperar datos.</h3>
 
 <h3>GET. El método GET se emplea para leer una representación de un resource. En caso de respuesta positiva (200 OK), GET devuelve la representación en un formato concreto: HTML, XML, JSON o imágenes, JavaScript, CSS, etc. En caso de respuesta negativa devuelve 404 (not found) o 400 (bad request). Por ejemplo en la carga de una página web, primero se carga la url solicitada:</h3>
