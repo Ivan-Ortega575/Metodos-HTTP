@@ -29,10 +29,16 @@ Aunque se puedan enviar datos a través del método GET, en muchos casos se util
 <h3>El método PATCH  es utilizado para aplicar modificaciones parciales a un recurso.</h3>
 
 <h2>5.-PUT</h2>
-<h3>El modo PUT reemplaza todas las representaciones actuales del recurso de destino con la carga útil de la petición.</h3>
+<h3>El modo PUT reemplaza todas las representaciones actuales del recurso de destino con la carga útil de la petición.
+PUT. Utilizado normalmente para actualizar contenidos, pero también pueden crearlos. Tampoco muestra ninguna información en la URL. En caso de éxito devuelve 201 (created, en caso de que la acción haya creado un elemento) o 204 (no response, si el servidor no devuelve ningún contenido). A diferencia de POST es idempotente, si se crea o edita un resource con PUT y se hace el mismo request otra vez, el resource todavía está ahí y mantiene el mismo estado que en la primera llamada. Si con una llamada PUT se cambia aunque sea sólo un contador en el resource, la llamada ya no es idempotente, ya que se cambian contenidos.</h3>
+
+PUT ejemplo.com/usuario/peter HTTP/1.1
 
 <h2>6.-DELETE</h2>
-<h3>El método DELETE borra un recurso en específico.</h3>
+<h3>El método DELETE borra un recurso en específico.
+DELETE. Simplemente elimina un resource identificado en la URI. Si se elimina correctamente devuelve 200 junto con un body response, o 204 sin body. DELETE, al igual que PUT y GET, también es idempotente.
+    
+DELETE ejemplo.com/usuario/peter HTTP/1.1
 
 <h2>7.-OPTIONS</h2>
 <h3>El método OPTIONS es utilizado para describir las opciones de comunicación para el recurso de destino.</h3>
