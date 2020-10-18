@@ -9,12 +9,8 @@ GET php.net/docs HTTP/1.1
 <h3>En este caso devolverá HTML. Y después los demás resources como CSS, JS, o imágenes:</h3>
 GET php.net/images/logo.png HTTP/1.1
 
-<h2>Ejemplo</h2>
-form action="formget.php" method="get"
-        Nombre: <input type="text" name="nombre"><br>
-        Email: <input type="text" name="email"><br>
-        <input type="submit" value="Enviar">
-    form
+![headerGET](https://user-images.githubusercontent.com/72004435/96373647-93773700-1133-11eb-9bca-8fce03f229a2.PNG)
+
     
 
 <h2>2.-HEAD</h2>
