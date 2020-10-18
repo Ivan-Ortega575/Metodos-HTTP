@@ -17,6 +17,9 @@ GET php.net/images/logo.png HTTP/1.1
 <h2>2.-HEAD</h2>
 <h3>El método HEAD pide una respuesta idéntica a la de una petición GET, pero sin el cuerpo de la respuesta.</h3>
 
+![HEAD](https://user-images.githubusercontent.com/72004435/96374026-d934ff00-1135-11eb-9468-f69dcf360278.PNG)
+
+
 <h2>3.-POST</h2>
 <h3>El método POST se utiliza para enviar una entidad a un recurso en específico, causando a menudo un cambio en el estado o efectos secundarios en el servidor.
 Aunque se puedan enviar datos a través del método GET, en muchos casos se utiliza POST por las limitaciones de GET. En caso de respuesta positiva devuelve 201 (created). Los POST requests se envían normalmente con formularios:</h3>
