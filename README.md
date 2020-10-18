@@ -1,7 +1,7 @@
 <h1>Metodos-HTTP</h1>
-°Métodos HTTPs
 
-1.-<h2>GET</h2>
+
+<h2>1.-GET</h2>
 <h3>El método GET  solicita una representación de un recurso específico. Las peticiones que usan el método GET sólo deben recuperar datos.</h3>
 
 2.-<h2>EAD</h2>H
