@@ -57,6 +57,10 @@ DELETE ejemplo.com/usuario/peter HTTP/1.1
 <h2>8.-TRACE</h2>
 <h3>El método TRACE  realiza una prueba de bucle de retorno de mensaje a lo largo de la ruta al recurso de destino.
 </h3>
+
+![TRACE](https://user-images.githubusercontent.com/72004435/96374257-3aa99d80-1137-11eb-913d-07c51f65a878.PNG)
+
+
 <h2>9.-CONNECT</h2>
 <h3>El método CONNECT establece un túnel hacia el servidor identificado por el recurso.</h3>
 
