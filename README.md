@@ -73,4 +73,49 @@ DELETE ejemplo.com/usuario/peter HTTP/1.1
 
 <h1> TIPOS DE MENSAJES DE LAS PETICIONES HTTPs</h1>
 
+<h2>GET<h2>
+    error 1:
+    error 2:
+    error 3:
+    error 4:
+    error 5:
+<h2>HEAD</h2>
+    error 1:
+    error 2:
+    error 3:
+    error 4:
+    error 5:
+<h2>POST</h2>
+    error 1:
+    error 2:
+    error 3:
+    error 4:
+    error 5:
+<h2>PATCH</h2>
+    error 1:
+    error 2:
+    error 3:
+    error 4:
+    error 5:
 
+<h2>PUT</h2>
+    error 1:
+    error 2:
+    error 3:
+    error 4:
+    error 5:
+
+
+<h2>DELETE</h2>
+    error 1:
+    error 2:
+    error 3:
+    error 4:
+    error 5:
+
+<h2>OPTIONS</h2>
+    error 1:
+    error 2:
+    error 3:
+    error 4:
+    error 5:
