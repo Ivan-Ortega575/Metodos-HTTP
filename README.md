@@ -76,11 +76,11 @@ DELETE ejemplo.com/usuario/peter HTTP/1.1
 Los códigos de estado de respuesta HTTP indican si se ha completado satisfactoriamente una solicitud HTTP específica. 
 Las respuestas se agrupan en cinco clases:
 
-*Respuestas informativas (100–199),
-*Respuestas satisfactorias (200–299),
-*Redirecciones (300–399),
-*Errores de los clientes (400–499),
-*y errores de los servidores (500–599).
+<h2>Respuestas informativas (100–199),</h2>
+<h2>Respuestas satisfactorias (200–299),</h2>
+<h2>Redirecciones (300–399),</h2>
+<h2>Errores de los clientes (400–499),</h2>
+<h2>y errores de los servidores (500–599).</h2>
 Los códigos de estado se definen en la sección 10 de RFC 2616. 
 Puedes obtener las especificaciones actualizadas en RFC 7231.
 
