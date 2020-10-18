@@ -10,11 +10,11 @@ GET php.net/docs HTTP/1.1
 GET php.net/images/logo.png HTTP/1.1
 
 <h2>Ejemplo</h2>
-<form action="formget.php" method="get">
+<--<form action="formget.php" method="get">
         Nombre: <input type="text" name="nombre"><br>
         Email: <input type="text" name="email"><br>
         <input type="submit" value="Enviar">
-    </form>
+    </form>-->
     
 
 <h2>2.-HEAD</h2>
