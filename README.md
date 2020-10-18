@@ -1,4 +1,4 @@
-                                                          #<h1>Metodos-HTTP</h1>
+#<h1>Metodos-HTTP</h1>
 
 
 <h2>1.-GET</h2>
