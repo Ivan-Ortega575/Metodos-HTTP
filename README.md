@@ -36,7 +36,7 @@ PUT ejemplo.com/usuario/peter HTTP/1.1
 
 <h2>6.-DELETE</h2>
 <h3>El método DELETE borra un recurso en específico.
-DELETE. Simplemente elimina un resource identificado en la URI. Si se elimina correctamente devuelve 200 junto con un body response, o 204 sin body. DELETE, al igual que PUT y GET, también es idempotente.
+DELETE. Simplemente elimina un resource identificado en la URI. Si se elimina correctamente devuelve 200 junto con un body response, o 204 sin body. DELETE, al igual que PUT y GET, también es idempotente.</H3>
     
 DELETE ejemplo.com/usuario/peter HTTP/1.1
 
