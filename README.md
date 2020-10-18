@@ -71,3 +71,6 @@ DELETE ejemplo.com/usuario/peter HTTP/1.1
 ![CONNECT](https://user-images.githubusercontent.com/72004435/96374238-1221a380-1137-11eb-8b01-169d799e1aa7.PNG)
 
 
+<h1> TIPOS DE MENSAJES DE LAS PETICIONES HTTPs</h1>
+
+
