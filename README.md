@@ -4,7 +4,7 @@
 <h2>1.-GET</h2>
 <h3>El método GET  solicita una representación de un recurso específico. Las peticiones que usan el método GET sólo deben recuperar datos.</h3>
 
-<h2>2.-EAD</h2>H
+<h2>2.-HEAD</h2>
 <h3>El método HEAD pide una respuesta idéntica a la de una petición GET, pero sin el cuerpo de la respuesta.</h3>
 
 <h2>3.-POST</h2>
