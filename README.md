@@ -85,11 +85,76 @@ Los códigos de estado se definen en la sección 10 de RFC 2616.
 Puedes obtener las especificaciones actualizadas en RFC 7231.
 
 <h2>Respuestas informativas</h2>
-100 Continue
-<h3>Esta respuesta provisional indica que todo hasta ahora está bien y que el cliente debe continuar con la solicitud o ignorarla si ya está terminada.
-101 Switching Protocol</h3>
-<h3>Este código se envía en respuesta a un encabezado de solicitud Upgrade por el cliente e indica que el servidor acepta el cambio de protocolo propuesto por el agente de usuario.</h3>
-102 Processing (WebDAV)
-<h3>Este código indica que el servidor ha recibido la solicitud y aún se encuentra procesandola, por lo que no hay respuesta disponible.</h3>
-103 Early Hints
-<h3>Este código de estado está pensado principalmente para ser usado con el encabezado Link, permitiendo que el agente de usuario empiece a pre-cargar recursos mientras el servidor prepara una respuesta.</h3>
+<h3>100 Continue</h3>
+Esta respuesta provisional indica que todo hasta ahora está bien y que el cliente debe continuar con la solicitud o ignorarla si ya está terminada.
+<h3>101 Switching Protocol</h3>
+Este código se envía en respuesta a un encabezado de solicitud Upgrade por el cliente e indica que el servidor acepta el cambio de protocolo propuesto por el agente de usuario.
+<h3>102 Processing (WebDAV)</h3>
+Este código indica que el servidor ha recibido la solicitud y aún se encuentra procesandola, por lo que no hay respuesta disponible.
+<h3>103 Early Hints</h3>
+Este código de estado está pensado principalmente para ser usado con el encabezado Link, permitiendo que el agente de usuario empiece a pre-cargar recursos mientras el servidor prepara una respuesta.
+<h3>HTTP - Error 150 cannot view directory. (SCI7779)</h3>
+El propietario del servidor web y el servlet debe tener el mismo ID de usuario.
+Asegúrese de que el propietario del servlet tenga permiso de escritura en el directorio cehttp.
+
+<h2>Respuestas satisfactorias</h2>
+
+<h3>200 OK</h3>
+La solicitud ha tenido éxito. El significado de un éxito varía dependiendo del método HTTP:
+<h3>201 Created</h3>
+La solicitud ha tenido éxito y se ha creado un nuevo recurso como resultado de ello. Ésta es típicamente la respuesta enviada después de una petición PUT.
+<h3>202 Accepted</h3>
+La solicitud se ha recibido, pero aún no se ha actuado. Es una petición "sin compromiso", lo que significa que no hay manera en HTTP que permite enviar una respuesta asíncrona que indique el resultado del procesamiento de la solicitud. Está pensado para los casos en que otro proceso o servidor maneja la solicitud, o para el procesamiento por lotes.
+<h3>203 Non-Authoritative Information</h3>
+La petición se ha completado con éxito, pero su contenido no se ha obtenido de la fuente originalmente solicitada, sino que se recoge de una copia local o de un tercero. Excepto esta condición, se debe preferir una respuesta de 200 OK en lugar de esta respuesta.
+<h3>204 No Content</h3>
+La petición se ha completado con éxito pero su respuesta no tiene ningún contenido, aunque los encabezados pueden ser útiles. El agente de usuario puede actualizar sus encabezados en caché para este recurso con los nuevos valores.
+<h3>205 Reset Content</h3>
+La petición se ha completado con éxito, pero su respuesta no tiene contenidos y además, el agente de usuario tiene que inicializar la página desde la que se realizó la petición, este código es útil por ejemplo para páginas con formularios cuyo contenido debe borrarse después de que el usuario lo envíe.
+
+<h2>Redirecciones</h2>
+
+<h3>300 Multiple Choice</h3>
+Esta solicitud tiene más de una posible respuesta. User-Agent o el usuario debe escoger uno de ellos. No hay forma estandarizada de seleccionar una de las respuestas.
+<h3>301 Moved Permanently</h3>
+Este código de respuesta significa que la URI  del recurso solicitado ha sido cambiado. Probablemente una nueva URI sea devuelta en la respuesta.
+<h3>302 Found</h3>
+Este código de respuesta significa que el recurso de la URI solicitada ha sido cambiado temporalmente. Nuevos cambios en la URI serán agregados en el futuro. Por lo tanto, la misma URI debe ser usada por el cliente en futuras solicitudes.
+<h3>303 See Other</h3>
+El servidor envía esta respuesta para dirigir al cliente a un nuevo recurso solicitado a otra dirección usando una petición GET.
+<h3>304 Not Modified</h3>
+Esta es usada para propósitos de "caché". Le indica al cliente que la respuesta no ha sido modificada. Entonces, el cliente puede continuar usando la misma versión almacenada en su caché.
+<h3>305 Use Proxy </h3>
+Fue definida en una versión previa de la especificación del protocolo HTTP para indicar que una respuesta solicitada debe ser accedida desde un proxy. Ha quedado obsoleta debido a preocupaciones de seguridad correspondientes a la configuración de un proxy.
+
+<h2>Errores de cliente</h2>
+
+<h3>400 Bad Request</h3>
+Esta respuesta significa que el servidor no pudo interpretar la solicitud dada una sintaxis inválida.
+<h3>401 Unauthorized</h3>
+Es necesario autenticar para obtener la respuesta solicitada. Esta es similar a 403, pero en este caso, la autenticación es posible.
+<h3>402 Payment Required</h3>
+Este código de respuesta está reservado para futuros usos. El objetivo inicial de crear este código fue para ser utilizado en sistemas digitales de pagos. Sin embargo, no está siendo usado actualmente.
+<h3>403 Forbidden</h3>
+El cliente no posee los permisos necesarios para cierto contenido, por lo que el servidor está rechazando otorgar una respuesta apropiada.
+<h3>404 Not Found</h3>
+El servidor no pudo encontrar el contenido solicitado. Este código de respuesta es uno de los más famosos dada su alta ocurrencia en la web.
+<h3>405 Method Not Allowed</h3>
+El método solicitado es conocido por el servidor pero ha sido deshabilitado y no puede ser utilizado. Los dos métodos obligatorios, GET y HEAD, nunca deben ser deshabilitados y no deberían retornar este código de error.
+
+<h2>Errores de servidor</h2>
+
+<h3>500 Internal Server Error</h3>
+El servidor ha encontrado una situación que no sabe cómo manejarla.
+<h3>501 Not Implemented</h3>
+El método solicitado no está soportado por el servidor y no puede ser manejado. Los únicos métodos que los servidores requieren soporte (y por lo tanto no deben retornar este código) son GET y HEAD.
+<h3>502 Bad Gateway</h3>
+Esta respuesta de error significa que el servidor, mientras trabaja como una puerta de enlace para obtener una respuesta necesaria para manejar la petición, obtuvo una respuesta inválida.
+<h3>503 Service Unavailable</h3>
+El servidor no está listo para manejar la petición. Causas comunes puede ser que el servidor está caído por mantenimiento o está sobrecargado. Hay que tomar en cuenta que junto con esta respuesta, una página usuario-amigable explicando el problema debe ser enviada. Estas respuestas deben ser usadas para condiciones temporales y el encabezado HTTP Retry-After: debería, si es posible, contener el tiempo estimado antes de la recuperación del servicio. El webmaster debe también cuidar los encabezados relacionados al caché que son enviados junto a esta respuesta, ya que estas respuestas de condición temporal deben usualmente no estar en el caché.
+<h3>504 Gateway Timeout</h3>
+Esta respuesta de error es dada cuando el servidor está actuando como una puerta de enlace y no puede obtener una respuesta a tiempo.
+<h3>505 HTTP Version Not Supported</h3>
+La versión de HTTP usada en la petición no está soportada por el servidor.
+<h3>506 Variant Also Negotiates</h3>
+El servidor tiene un error de configuración interna: negociación de contenido transparente para la petición resulta en una referencia circular.
