@@ -73,48 +73,36 @@ DELETE ejemplo.com/usuario/peter HTTP/1.1
 
 <h1> TIPOS DE MENSAJES DE LAS PETICIONES HTTPs</h1>
 
-<h2>GET<h2>
-    <h3>error 1:</h3>
+<h2>100-199</h2>
+    <h3>error 1:</h3> 100 Continue
+Esta respuesta provisional indica que todo hasta ahora está bien y que el cliente debe continuar con la solicitud o ignorarla si ya está terminada.
+    <h3>error 2:</h3> 101 Switching Protocol
+Este código se envía en respuesta a un encabezado de solicitud Upgrade por el cliente e indica que el servidor acepta el cambio de protocolo propuesto por el agente de usuario.
+    <h3>error 3:</h3> 102 Processing (WebDAV)
+Este código indica que el servidor ha recibido la solicitud y aún se encuentra procesandola, por lo que no hay respuesta disponible.
+    <h3>error 4:</h3> 103 Early Hints
+Este código de estado está pensado principalmente para ser usado con el encabezado Link, permitiendo que el agente de usuario empiece a pre-cargar recursos mientras el servidor prepara una respuesta.
+    <h3>error 5:</h3> 183 "SSL Certificate add failed, Error: 183 Cannot create a file when that file already exists."
+<h2>200-299</h2>
+    <h3>error 1:</h3> 
     <h3>error 2:</h3>
     <h3>error 3:</h3>
     <h3>error 4:</h3>
     <h3>error 5:</h3>
-<h2>HEAD</h2>
-    <h3>error 1:</h3>
+<h2>300-399</h2>
+    <h3>error 1:</h3> 
     <h3>error 2:</h3>
     <h3>error 3:</h3>
     <h3>error 4:</h3>
     <h3>error 5:</h3>
-<h2>POST</h2>
-    <h3>error 1:</h3>
+<h2>400-499</h2>
+    <h3>error 1:</h3> 
     <h3>error 2:</h3>
     <h3>error 3:</h3>
     <h3>error 4:</h3>
     <h3>error 5:</h3>
-<h2>PATCH</h2>
-    <h3>error 1:</h3>
-    <h3>error 2:</h3>
-    <h3>error 3:</h3>
-    <h3>error 4:</h3>
-    <h3>error 5:</h3>
-
-<h2>PUT</h2>
-    <h3>error 1:</h3>
-    <h3>error 2:</h3>
-    <h3>error 3:</h3>
-    <h3>error 4:</h3>
-    <h3>error 5:</h3>
-
-
-<h2>DELETE</h2>
-    <h3>error 1:</h3>
-    <h3>error 2:</h3>
-    <h3>error 3:</h3>
-    <h3>error 4:</h3>
-    <h3>error 5:</h3>
-
-<h2>OPTIONS</h2>
-    <h3>error 1:</h3>
+<h2>500-599</h2>
+    <h3>error 1:</h3> 
     <h3>error 2:</h3>
     <h3>error 3:</h3>
     <h3>error 4:</h3>
