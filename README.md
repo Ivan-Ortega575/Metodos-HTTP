@@ -74,11 +74,11 @@ DELETE ejemplo.com/usuario/peter HTTP/1.1
 <h1> TIPOS DE MENSAJES DE LAS PETICIONES HTTPs</h1>
 
 <h2>GET<h2>
-    error 1:
-    error 2:
-    error 3:
-    error 4:
-    error 5:
+    <h3>error 1:</h3>
+    <h3>error 2:</h3>
+    <h3>error 3:</h3>
+    <h3>error 4:</h3>
+    <h3>error 5:</h3>
 <h2>HEAD</h2>
     error 1:
     error 2:
