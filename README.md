@@ -9,6 +9,7 @@ GET php.net/docs HTTP/1.1
 <h3>En este caso devolverá HTML. Y después los demás resources como CSS, JS, o imágenes:</h3>
 GET php.net/images/logo.png HTTP/1.1
 
+
 ![headerGET](https://user-images.githubusercontent.com/72004435/96373647-93773700-1133-11eb-9bca-8fce03f229a2.PNG)
 
     
@@ -17,7 +18,12 @@ GET php.net/images/logo.png HTTP/1.1
 <h3>El método HEAD pide una respuesta idéntica a la de una petición GET, pero sin el cuerpo de la respuesta.</h3>
 
 <h2>3.-POST</h2>
-<h3>El método POST se utiliza para enviar una entidad a un recurso en específico, causando a menudo un cambio en el estado o efectos secundarios en el servidor.</h3>
+<h3>El método POST se utiliza para enviar una entidad a un recurso en específico, causando a menudo un cambio en el estado o efectos secundarios en el servidor.
+Aunque se puedan enviar datos a través del método GET, en muchos casos se utiliza POST por las limitaciones de GET. En caso de respuesta positiva devuelve 201 (created). Los POST requests se envían normalmente con formularios:</h3>
+
+
+![POST](https://user-images.githubusercontent.com/72004435/96373759-329c2e80-1134-11eb-9ead-ef7a986783ce.PNG)
+
 
 <h2>4.-PATCH</h2>
 <h3>El método PATCH  es utilizado para aplicar modificaciones parciales a un recurso.</h3>
